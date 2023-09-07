@@ -1,0 +1,64 @@
+.container{
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    border-radius: 4px;
+    background-color: rgb(208, 197, 197);
+    box-shadow: 2px 2px 4px 2px grey;
+  }
+  .form{
+    text-align: center;
+    padding: 5px 0;
+    text-align: center;
+  }
+  .formElement{
+      margin: 20px 5px;
+      font-size: 1.2rem;
+     
+  }
+  .label{
+      margin-bottom: 10px;
+  }
+  .inputbox{
+      margin: 5px;
+      width: 300px;
+      height: 35px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      padding: 3px;
+  }
+  .message{
+      margin: 5px;
+      width: 300px;
+      height: 70px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      padding: 3px;
+  }
+  .btn{
+      width: 300px;
+      height: 35px;
+      border-radius: 5px;
+      background-color: rgb(57, 107, 45);
+      margin: 5px 0;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2em;
+      padding: 3px;
+      outline: none;
+      border: none;
+  
+  }
+  .btn:hover{
+      cursor: pointer;
+      box-shadow: 3px 3px 4px rgb(89, 89, 162);
+  }
+  @media (max-width: 500px) {
+    .container {
+      margin: 20px auto;
+      max-width: fit-content;
+    }
+  }
+  

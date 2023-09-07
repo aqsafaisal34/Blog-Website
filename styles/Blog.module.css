@@ -1,0 +1,69 @@
+.container{
+    text-align: center;
+}
+
+.bloglist{
+    margin: 5px 0;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+   
+  }
+.blogtheme{
+    background-color: rgb(216, 216, 207);
+    border-radius: 4px;
+    list-style: none;
+    margin: 15px 0;
+    padding: 5px;
+}
+
+.heading{
+    margin:10px 0;
+}
+.eachblogList{
+    margin: 30px 5px;
+}
+.eachblogId{
+    width: 50px;
+    border-radius: 100px;
+    padding: 3px;
+    text-align: center;
+    background-color: grey;
+    margin-bottom: 5px;
+}
+.eachblogContent{
+    margin: 10px 0;
+    font-style: italic;
+    font-weight: bold;
+}
+.eachblogAuthor{
+    margin-bottom: 5px;
+    font-style: italic;
+    font-weight: bold;
+}
+.eachblogDate{
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.link{
+    color: rgb(24, 24, 77);
+    font-style: italic;
+    font-weight: bold;
+}
+.image{
+    width: 100%;
+    text-align: center;
+}
+.img{
+    border-radius: 92px;
+    margin: 10px 0;
+}
+.blogList:hover{
+  box-shadow: 2px 2px 2px 2px grey;
+}
+@media (max-width:500px){
+    .bloglist{
+        max-width: 300px;
+    }
+}
