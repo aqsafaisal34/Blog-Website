@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
 import { useState } from 'react';
+import BlogsData from '@/blogdata/blogs.json';
 
 
 
 function Home({blogs}) {
-const [blog, setBlog] = useState(blogs);
+// const [blog, setBlog] = useState(blogs);
   return (
     <>
       <Head>
@@ -23,7 +24,7 @@ const [blog, setBlog] = useState(blogs);
       <content className={styles.content}>
         <h2>Popular Blogs</h2>
         <ul className={styles.bloglist}>
-        {blog.slice(0,6).map((eachblog) => {
+        {blogs.slice(0,6).map((eachblog) => {
           return(
             <div className={styles.blogstyle}>
             <li key={eachblog.id} className={styles.blogtheme}>
@@ -42,15 +43,22 @@ const [blog, setBlog] = useState(blogs);
   )
 }
 
-export async function getServerSideProps() {
-  // Fetch data from your API route
-  const response = await fetch('https://blog-website-drab-eight.vercel.app/api/getblogs');
-  const blogs = await response.json();
+// export async function getServerSideProps() {
+//   // Fetch data from your API route
+//   const response = await fetch('https://blog-website-drab-eight.vercel.app/api/getblogs');
+//   const blogs = await response.json();
 
-  // Pass the blog data as a prop
+//   // Pass the blog data as a prop
+//   return {
+//     props: {
+//       blogs,
+//     },
+//   };
+// }
+export async function getServerSideProps() {
   return {
     props: {
-      blogs,
+      blogs: BlogsData,
     },
   };
 }
