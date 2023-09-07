@@ -11,7 +11,7 @@ const Contact = () => {
     e.preventDefault();
     console.log(name, email, phoneNumber, message);
     const data = { name, email, phoneNumber, message };
-    fetch("http://localhost:3000/api/postcontact", {
+    fetch("https://blog-website-drab-eight.vercel.app/api/postcontact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
