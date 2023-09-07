@@ -44,7 +44,7 @@ const [blog, setBlog] = useState(blogs);
 
 export async function getServerSideProps() {
   // Fetch data from your API route
-  const response = await fetch('http://localhost:3000/api/getblogs');
+  const response = await fetch('https://blog-website-drab-eight.vercel.app/api/getblogs');
   const blogs = await response.json();
 
   // Pass the blog data as a prop

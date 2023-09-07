@@ -13,7 +13,7 @@ const Blog = ({ blogs }) => {
           return (
             <div className={styles.blogList}>
             <li key={blog.id} className={styles.blogtheme}>
-            <Link href={`/blog/${blog.id}`}> <h2 className={styles.title}>{blog.title}</h2> </Link>
+            <Link href={`https://blog-website-drab-eight.vercel.app/blog/${blog.id}`}> <h2 className={styles.title}>{blog.title}</h2> </Link>
            <p className={styles.content}> {blog.content.slice(0, 300)} </p> 
             </li>
             </div>
