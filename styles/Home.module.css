@@ -36,6 +36,11 @@
   text-align: center;
   box-shadow: 2px 2px 2px 2px grey;
 }
+.btn{
+  border: none;
+  color: blue;
+  background-color: inherit;
+}
 @media (max-width: 400px) {
   .description {
     width: 90vw;
@@ -43,7 +48,8 @@
   }
   .blogtheme{
     width: 300px;
-    overflow: hidden;
+    height: 180px;
+    overflow: scroll;
   }
 
 }

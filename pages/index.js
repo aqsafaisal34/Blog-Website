@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
 import { useState } from 'react';
 import BlogsData from '@/blogdata/blogs.json';
+import Link from 'next/link';
 
 
 
@@ -30,6 +31,7 @@ function Home({blogs}) {
             <li key={eachblog.id} className={styles.blogtheme}>
             <h2 className={styles.title}>{eachblog.title}</h2>
             <p className={styles.content}>{eachblog.content.slice(0,400)}</p>
+           <Link href='/blog'> <button className={styles.btn}>Read more..</button></Link>
           </li>
           </div>
           )
